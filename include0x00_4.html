@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>include 0x00 (4)</title>
+  <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script>
+    $( document ).ready(function() {
+      $.getJSON('include0x00_4.json', function(json) {
+        $('p#placeholder1').text(json.data1);
+        $('p#placeholder2').text(json.data2);
+        $('p#placeholder3').text(json.data3);
+      });
+    });
+  </script>
+</head>
+<body>
+  <p id="placeholder1"></p>
+  <p id="placeholder2"></p>
+  <p id="placeholder3"></p>
+</body>
+</html>

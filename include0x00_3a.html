@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>include 0x00 (3a)</title>
+  <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script>
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', 'include0x00_3.json', false);
+    xhr.send();
+    if (xhr.status === 200) {
+      console.log(xhr.responseText);
+      var d = JSON.parse(xhr.responseText);
+      console.log(d);
+    }
+  </script>
+</head>
+<body></body>
+</html>

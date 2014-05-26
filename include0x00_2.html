@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>include 0x00 (2)</title>
+</head>
+<body>
+  <p id="placeholder"></p>
+  <script>
+    var data = '\u0041\u0042\u0000\u0043\u0044';
+    var e = document.getElementById('placeholder');
+    e.appendChild(document.createTextNode(data));
+  </script>
+</body>
+</html>
